@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Property Listings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Property Listings</h1>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" id="locationInput" placeholder="Search by location" />
+    <input type="number" id="maxPriceInput" placeholder="Max price (₹)" />
+    <button onclick="filterProperties()">Search</button>
+  </div>
+
+  <div class="property-listings" id="listings">
+    <!-- Properties will be injected by JS -->
+  </div>
+
+  <div id="inquiryModal" class="modal">
+    <div class="modal-content">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Submit</button>
+        <button type="button" onclick="closeModal()">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
